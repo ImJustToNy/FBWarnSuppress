@@ -1,0 +1,18 @@
+[
+  {
+    "id" : 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://redirect.siek.workers.dev/\\1"
+      }
+    },
+    "condition" : {
+      "regexFilter": "^https://www.facebook.com/messenger/desktop/archonUrl\\?.+url=([^&#]+)",
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  }
+]
